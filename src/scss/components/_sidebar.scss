@@ -1,8 +1,10 @@
 .sidebar {
+  background-color: $color-background-white;
   max-width: calc(306px - 28px * 2);
   padding: 37px 28px 0;
   position: relative;
   position: fixed;
+  z-index: 1;
   width: 100%;
   
   &__wrapper {
@@ -56,5 +58,11 @@
         font-weight: 400;
       }
     }
+  }
+}
+
+@media (max-width: 1236px) {
+  .sidebar {
+    right: -306px;
   }
 }

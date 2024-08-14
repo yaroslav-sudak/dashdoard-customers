@@ -54,7 +54,7 @@
     color: $color-text-gray;
     height: 49px;
 
-    & :nth-child(n){
+    & :nth-child(n) {
       border-bottom: 0;
     }
 
@@ -67,3 +67,16 @@
     }
   }
 }
+
+@media (max-width: 1236px) {
+  .customer-list__header {
+    &-line {
+      display: none;
+    }
+
+    & :nth-child(n){
+      border-bottom: 1px solid $color-border-gray;
+    }
+  }
+}
+
