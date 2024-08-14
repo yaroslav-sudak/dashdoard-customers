@@ -1,0 +1,20 @@
+- var items = [{isSelect:false,iconPath:"./src/assets/icons/dashboard.svg",text:"Dashboard",},{isSelect:true,iconPath:"./src/assets/icons/product.svg",text:"Product",},{isSelect:true,iconPath:"./src/assets/icons/customers.svg",text:"Customers",},{isSelect:true,iconPath:"./src/assets/icons/income.svg",text:"Income",},{isSelect:true,iconPath:"./src/assets/icons/promote.svg",text:"Promote",},{isSelect:true,iconPath:"./src/assets/icons/help.svg",text:"Help",}];
+
+mixin sidebar()
+  div.sidebar
+    .sidebar__wrapper
+      .sidebar__top
+        .sidebar__logo
+          +logo()
+        nav
+          ul.sidebar__list
+            for item in items
+              li.sidebar__item
+                +menu(item)
+      .sidebar__bottom
+        .sidebar__user
+          .sidebar__user-img
+            img(src="./src/assets/images/user.png")
+          .sidebar__user-text
+            p.sidebar__user-text-name= "Evano"
+            p.sidebar__user-text-role= "Project Manager"

@@ -1,0 +1,56 @@
+// * Colors
+// ---------------------------------------------
+
+$color-pastel-cyan: rgba(22, 192, 152, 0.38);
+$color-bright-turquoise: #00B087;
+$color-electric-violet: #5932EA;
+$color-charcoal-black: #292D32;
+$color-gunmetal-gray: #404B52;
+$color-medium-gray: #7E7E7E;
+$color-silver-gray: #B5B7C0;
+$color-white-smoke: #F5F5F5;
+$color-ghost-white: #F9FBFF;
+$color-bright-red: #DF0404;
+$color-aqua-green: #16C098;
+$color-light-gray: #EEEEEE;
+$color-pure-white: #FFFFFF;
+$color-snow-white: #FAFBFF;
+$color-deep-teal: #008767;
+$color-cool-gray: #9197B3;
+$color-soft-pink: #FFC5C5;
+$color-dark-gray: #757575;
+$color-black: #000000;
+$color-gray: #838383;
+
+// Background colors
+
+$color-background-violet: $color-electric-violet;
+$color-background-cool-gray: $color-snow-white;
+$color-background-positive: $color-pastel-cyan;
+$color-background-negative: $color-soft-pink;
+$color-background-white: $color-pure-white;
+$color-background-gray: $color-white-smoke;
+
+// Fonts colors
+
+$color-text-positive-dark: $color-deep-teal;
+$color-text-dark-gray: $color-gunmetal-gray;
+$color-text-positive: $color-aqua-green;
+$color-text-negative: $color-bright-red;
+$color-text-white: $color-pure-white;
+$color-text-gray: $color-silver-gray;
+$color-text-blue: $color-cool-gray;
+
+$color-text: $color-charcoal-black;
+$color-title: $color-black;
+
+// Border colors
+
+$color-border-negative: $color-bright-red;
+$color-border-positive: $color-bright-turquoise;
+$color-border-gray: $color-light-gray;
+
+// * Fonts
+// ---------------------------------------------
+
+$font-main: 'Poppins', sans-serif;

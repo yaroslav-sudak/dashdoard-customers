@@ -1,0 +1,30 @@
+.logo {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+
+  &__image {
+    margin-right: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__content {
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-items: end;
+    display: flex;
+  }
+  
+  &__text {
+    letter-spacing: .8px;
+    margin-right: 4px;
+  }
+
+  &__subtext {
+    margin-bottom: 4px;
+    color: $color-gray;
+    font-weight: 400;
+    font-size: .6rem;
+  }
+}

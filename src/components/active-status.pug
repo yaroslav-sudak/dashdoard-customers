@@ -1,0 +1,9 @@
+mixin active-status(status)
+  if status
+    .active-status.active-status--positive
+      .active-status__text
+        span Active
+  else
+    .active-status.active-status--negative
+      .active-status__text
+        span Inactive

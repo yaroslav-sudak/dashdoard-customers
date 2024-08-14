@@ -1,0 +1,64 @@
+.menu {
+  background-color: $color-background-white;
+  padding: 13px 0 9px 11px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  user-select: none;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+
+  &--select {
+    position: relative;
+
+    &::after {
+      content: url(./src/assets/icons/arrow.svg);
+      position: absolute;
+      right: 13px;
+      top: 14px;
+    }
+
+    & .menu__text {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__icon {
+    margin-right: 14px;
+  }
+
+  &__text {
+    color: $color-text-blue;
+    letter-spacing: 0.7px;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    align-items: end;
+    display: flex;
+  }
+
+  &--active {
+    background-color: $color-background-violet;
+    transition: 0.1s background-color;
+    cursor: default;
+
+    & .menu__text {
+      color: $color-pure-white;
+    }
+
+    & .menu__icon {
+      filter: brightness(0) invert(1);
+    }
+
+    &::after {
+      filter: brightness(0) invert(1);
+    }
+  }
+  &:not(&--active){
+    &:hover {
+    filter: brightness(0.9);
+    }
+  }
+}

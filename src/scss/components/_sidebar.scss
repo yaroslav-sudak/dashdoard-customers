@@ -1,0 +1,60 @@
+.sidebar {
+  max-width: calc(306px - 28px * 2);
+  padding: 37px 28px 0;
+  position: relative;
+  position: fixed;
+  width: 100%;
+  
+  &__wrapper {
+    justify-content: space-between;
+    height: calc(100vh - 37px);
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__logo {
+    margin-bottom: 51px;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__user {
+    flex-direction: row;
+    margin-bottom: 76px;
+    display: flex;
+    &-img {
+      border-radius: 50%;
+      margin-right: 12px;
+      overflow: hidden;
+      height: 42px;
+      width: 42px;
+      & + img {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+
+      &-name {
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      &-role {
+        color: $color-dark-gray;
+        font-size: 0.75rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

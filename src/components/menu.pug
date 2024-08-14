@@ -1,0 +1,11 @@
+mixin menu({isSelect, iconPath, text})
+  if !isSelect
+    a(href="#").menu
+      .menu__icon
+        img(src=iconPath)
+      .menu__text=text
+  else
+    a(href="#").menu.menu--select
+      .menu__icon
+        img(src=iconPath)
+      .menu__text=text

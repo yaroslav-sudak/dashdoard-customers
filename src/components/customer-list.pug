@@ -1,0 +1,19 @@
+mixin customer-list(customers)
+  table.customer-list
+      tr.customer-list__row.customer-list__header
+        th.customer-list__column Customer Name
+        th.customer-list__column Company
+        th.customer-list__column Phone Number
+        th.customer-list__column Email
+        th.customer-list__column Country
+        th.customer-list__column Status
+      .customer-list__header-line
+      for customer in customers
+        tr.customer-list__row
+          td.customer-list__column=customer.name
+          td.customer-list__column=customer.company
+          td.customer-list__column.customer-list__column-photo=customer.phone
+          td.customer-list__column=customer.email
+          td.customer-list__column=customer.country
+          td.customer-list__column
+            +active-status(customer.status)

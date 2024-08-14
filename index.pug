@@ -1,0 +1,10 @@
+extends ./src/extends/common
+block style
+  link(rel="stylesheet", href="./index.css")
+block title 
+  title Dashboard Customers
+block content
+  +loader()
+  +main()
+block js
+  script(src="./index.js")

@@ -1,0 +1,23 @@
+.active-status {
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  user-select: none;
+  font-weight: 600;
+  display: flex;
+  height: 27px;
+  width: 78px;
+
+  &--positive {
+    color: $color-text-positive-dark;
+    background-color: $color-background-positive;
+    border: 1px solid $color-border-positive;
+  }
+
+  &--negative {
+    color: $color-text-negative;
+    background-color: $color-background-negative;
+    border: 1px solid $color-border-negative;
+  }
+
+}
