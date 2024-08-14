@@ -1,7 +1,12 @@
 - var items = [{isSelect:false,iconPath:"./src/assets/icons/dashboard.svg",text:"Dashboard",},{isSelect:true,iconPath:"./src/assets/icons/product.svg",text:"Product",},{isSelect:true,iconPath:"./src/assets/icons/customers.svg",text:"Customers",},{isSelect:true,iconPath:"./src/assets/icons/income.svg",text:"Income",},{isSelect:true,iconPath:"./src/assets/icons/promote.svg",text:"Promote",},{isSelect:true,iconPath:"./src/assets/icons/help.svg",text:"Help",}];
 
 mixin sidebar()
-  div.sidebar
+  div.sidebar#sidebar
+    button.sidebar-button.sidebar-button--open#open
+      img(src="./src/assets/icons/logo.svg")
+    button.sidebar-button.sidebar-button--close#close
+      .sidebar-button.sidebar-button--close__line
+      .sidebar-button.sidebar-button--close__line
     .sidebar__wrapper
       .sidebar__top
         .sidebar__logo

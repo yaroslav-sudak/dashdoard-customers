@@ -12,15 +12,22 @@ searchRows = document.getElementsByClassName("customer-list__row");
 
 (() => {
   const loader = document.getElementById("loader");
-  console.log(loader);
-
   setTimeout(() => {
     // Delete loader
     loader.remove();
-    
-
   }, 3000);
 })();
+
+openSidebarButton = document.getElementById("open");
+closeSidebarButton = document.getElementById("close");
+
+openSidebarButton.addEventListener("click", () => {
+  document.getElementById("sidebar").classList.toggle("sidebar--active");
+});
+
+closeSidebarButton.addEventListener("click", () => {
+  document.getElementById("sidebar").classList.remove("sidebar--active");
+});
 
 function setActiveSidebarItem(number) {
   sidebarItems[sidebarActiveItem - 1].children[0].classList.remove("menu--active");

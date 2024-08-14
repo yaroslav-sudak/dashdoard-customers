@@ -2,11 +2,53 @@
   background-color: $color-background-white;
   max-width: calc(306px - 28px * 2);
   padding: 37px 28px 0;
-  position: relative;
   position: fixed;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
+  left: 0;
   
+  &-button {
+    background-color: $color-background-white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    
+    &--open {
+      border: 2px solid $color-border-gray;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-right: 0;
+      transition: .4s;
+      height: 60px;
+      width: 60px;
+      left: -60px;
+      top: 25px;
+    }
+    
+    &--close {
+      height: 30px;
+      width: 30px;
+      right: 20px;
+      top: 40px;
+
+      &__line {
+        height: 2px;
+        width: 30px;
+        background-color: $color-dark-gray;
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
   &__wrapper {
     justify-content: space-between;
     height: calc(100vh - 37px);
@@ -63,6 +105,17 @@
 
 @media (max-width: 1236px) {
   .sidebar {
+    transition: 0.2s;
     right: -306px;
+    left: auto;
+    
+    &--active {
+      right: 0;
+    }
+
+    &-button {
+      display: flex;
+
+    }
   }
 }
